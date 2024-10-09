@@ -40,8 +40,8 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
-    BirthdayAppTheme {
-        Greeting("Android")
+fun BirthdayCardPreview() {
+    HappyBirthdayTheme {
+        Greeting("Zakaria")
     }
 }
