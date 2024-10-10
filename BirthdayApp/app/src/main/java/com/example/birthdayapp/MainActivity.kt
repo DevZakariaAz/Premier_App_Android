@@ -89,7 +89,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             BirthdayAppTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -131,6 +130,6 @@ fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
 @Composable
 fun BirthdayCardPreview() {
     BirthdayAppTheme {
-        GreetingText(message = "Fahd!", from = "From Zakaria")
+        GreetingText(message = "Fahd", from = "From Zakaria")
     }
 }
