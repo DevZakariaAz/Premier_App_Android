@@ -64,7 +64,7 @@ package com.example.birthdayapp
 //    }
 //}
 
-
+import androidx.compose.foundation.Image
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -120,13 +120,14 @@ fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
             text = from,
             fontSize = 36.sp,
             modifier = Modifier
+
                 .padding(16.dp)
                 .align(alignment = Alignment.End)
         )
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun BirthdayCardPreview() {
     BirthdayAppTheme {
