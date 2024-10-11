@@ -12,17 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Catre_de_Visite"
         tools:targetApi="31">
+
+        <!-- Change the activity name from .MainActivity to .CarteVisit -->
         <activity
-            android:name=".MainActivity"
+            android:name=".CarteVisit"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="@string/activity_label"
             android:theme="@style/Theme.Catre_de_Visite">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Catre_de_Visite</string>
+    <string name="app_name">Carte de Visite</string>
+    <string name="activity_label">My Visiting Card</string> <!-- New label -->
 </resources>
