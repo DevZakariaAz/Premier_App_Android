@@ -40,6 +40,7 @@ class MainActivity : ComponentActivity() {
                 modifier = Modifier.fillMaxSize(),
                 color = colorScheme.background
             ) {
+                // Call the GreetingImage composable
                 GreetingImage()
             }
         }
@@ -56,8 +57,10 @@ fun GreetingImage() {
             modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.Crop
         )
+
         val transparentColor = Color(0x80FFFFFF) // 50% transparent white
         Box(
+            // Center the content of the box
             modifier = Modifier
                 .padding(16.dp)
                 .border(
@@ -73,16 +76,19 @@ fun GreetingImage() {
                 .align(Alignment.Center)
         ) {
             Column(
+                // Center the content of the column
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center,
                 modifier = Modifier.fillMaxWidth()
             ) {
+                // Styling image and text
                 val foregroundImage = painterResource(R.drawable.oujda_jama3)
                 Image(
                     painter = foregroundImage,
                     contentDescription = null,
                     modifier = Modifier.size(150.dp)
                 )
+                // Spacer between the image and the text
                 Spacer(modifier = Modifier.height(16.dp))
                 CarteDeVisitContent(city = "Oujda")
             }
@@ -97,6 +103,7 @@ fun CarteDeVisitContent(modifier: Modifier = Modifier, city: String) {
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = modifier
     ) {
+        // Nom of the city
         Text(
             text = "City is $city",
             modifier = modifier.padding(8.dp),
@@ -104,13 +111,15 @@ fun CarteDeVisitContent(modifier: Modifier = Modifier, city: String) {
             lineHeight = 30.sp,
             textAlign = TextAlign.Center
         )
+        // Description about the city
         Text(
-            text = "Oujda is the capital city of the Oriental region, Morocco",
+            text = "$city is the capital city of the Oriental region, Morocco",
             fontSize = 18.sp,
             modifier = modifier.padding(4.dp)
         )
+        // Address of the city
         Text(
-            text = "Mohammed VI Mosque Oujda, Morocco",
+            text = "Mohammed VI Mosque $city, Morocco",
             fontSize = 16.sp,
             modifier = modifier.padding(4.dp)
         )
