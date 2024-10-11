@@ -50,7 +50,7 @@ fun BirthdayGreeting(name: String, from: String, modifier: Modifier = Modifier) 
     {
         Text(
             text = "happy birthday $name!",
-            modifier = modifier.padding(20.dp),
+            modifier = modifier.padding(15.dp),
             fontSize = 80.sp,
             lineHeight = 100.sp,
             textAlign = TextAlign.Center
